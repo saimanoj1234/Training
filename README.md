@@ -1,4 +1,4 @@
-######IT ESSENTIALS:<br>
+#IT ESSENTIALS:
 
 A.Linux Commands<br>
 B.ETL Tools<br>
