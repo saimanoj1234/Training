@@ -8,7 +8,8 @@ E.Testing<br>
 F.Softwares for development<br>
 G.Database<br>
 H. OOPS<br>
-I. Cloud will be completed by monday i.e 02/13 <br>
+I. Cloud will be completed by monday  i.e 02/13 <br>
+J. And also remaining topics
 
 
 Hadoop : <br>
