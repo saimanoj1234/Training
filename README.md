@@ -18,5 +18,5 @@ B. Practised commands in cloudx
 
 Hive: <br>
 
-A.Practised hive commands along with sql queries
+A.Practised hive commands along with sql queries<br>
 B. 02/10 working on assignment given by arvind
