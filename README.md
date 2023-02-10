@@ -1,4 +1,4 @@
-#IT ESSENTIALS:
+#IT ESSENTIALS <br>
 
 A.Linux Commands<br>
 B.ETL Tools<br>
@@ -19,7 +19,7 @@ B. Practised commands in cloudx
 Hive: <br>
 
 A.Practised hive commands along with sql queries<br>
-B. 02/10 working on assignment given by arvind
+B. 02/10 working on assignment given by arvind<br>
 
 
 LeetCode: <br>
