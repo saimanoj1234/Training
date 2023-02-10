@@ -1,9 +1,11 @@
 IT ESSENTIALS:<br>
-COMPLETED
-A.Linux Commands
-B.ETL Tools
-C.Version Control
-D.Jira
-E.Testing
-F.Softwares for development
-G.Database ---------------- STILL WORKING
+
+A.Linux Commands<br>
+B.ETL Tools<br>
+C.Version Control<br>
+D.Jira<br>
+E.Testing<br>
+F.Softwares for development<br>
+G.Database<br>
+H. OOPS<br>
+I. Cloud will be completed by monday i.e 02/13 <br>
