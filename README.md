@@ -20,3 +20,8 @@ Hive: <br>
 
 A.Practised hive commands along with sql queries<br>
 B. 02/10 working on assignment given by arvind
+
+
+LeetCode: <br>
+A.Sql: completed 7 questions <br>
+B.Python : completed 6 questions <br>
