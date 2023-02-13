@@ -10,12 +10,13 @@ G.Database<br>
 H. OOPS<br>
 I. Cloud will be completed by monday  i.e 02/13 <br>
 J. And also remaining topics (CI|CD, Sharepoint,Confluence,API) <br>
-K. Only 2 topics left in it essentials I.e CI/CD and Cloud( GCP and Azure)
+K. Only 2 topics left in it essentials I.e CI/CD and Cloud( GCP and Azure)<br>
+L. Today: 02/13  Jenikins , GCP And Azure<br>
 
 
 Hadoop : <br>
-A. Watched theory videos in youtube
-B. Practised commands in cloudx
+A. Watched theory videos in youtube<br>
+B. Practised commands in cloudx<br>
 
 Hive: <br>
 
