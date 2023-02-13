@@ -1,0 +1,71 @@
+LEET CODE QUESTIONS:
+
+1.Write an SQL query to report the name, population, and area of the big countries.
+Return the result table in any order.
+
+# Write your MySQL query statement below
+SELECT name, population, area FROM world WHERE area >= 3000000 OR population >= 25000000
+;
+
+
+2.Write an SQL query to find the ids of products that are both low fat and recyclable.
+Return the result table in any order.
+
+# Write your MySQL query statement below
+select product_id from Products as pt where low_fats='Y' and recyclable='Y';
+
+3.Write an SQL query to report the names of the customer that are not referred by the customer with id = 2.
+Return the result table in any order.
+
+# Write your MySQL query statement below
+select name from Customer where referee_id is null or referee_id != 2;
+
+4.Write an SQL query to report all customers who never order anything.
+Return the result table in any order.
+
+
+# Write your MySQL query statement below
+SELECT Customers.id,Orders.id 
+FROM Customers
+FULL JOIN Orders
+ON Customers.id = Orders.id
+WHERE Orders.customerId is not null;
+
+5.Write an SQL query to calculate the bonus of each employee. The bonus of an employee is 100% of their salary if the ID of the employee is an odd number and the employee name does not start with the character 'M'. The bonus of an employee is 0 otherwise.
+Return the result table ordered by employee_id.
+
+# Write your MySQL query statement below
+select employee_id , salary * ( employee_id%2 ) * ( name not like 'M%') as bonus
+from employees
+order by employee_id;
+
+6.Write an SQL query to swap all 'f' and 'm' values (i.e., change all 'f' values to 'm' and vice versa) with a single update statement and no intermediate temporary tables.
+Note that you must write a single update statement, do not write any select statement for this problem.
+
+update salary set  sex = (
+	CASE 
+		WHEN sex = 'm' then 'f'
+		else 'm'
+	end
+);
+
+7.Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id. Note that you are supposed to write a DELETE statement and not a SELECT one.
+After running your script, the answer shown is the Person table. The driver will first compile and run your piece of code and then show the Person table. The final order of the Person table does not matter
+
+# Please write a DELETE statement and DO NOT write a SELECT statement.
+# Write your MySQL query statem
+#delete from Person where (disticnt(email) ;
+#using self join
+DELETE p2 FROM Person p1,Person p2
+WHERE
+    p1.email = p2.email AND p1.id < p2.id
+
+8.Write an SQL query to fix the names so that only the first character is uppercase and the rest are lowercase.
+Return the result table ordered by user_id.
+
+# Write your MySQL query statement below
+select user_id, 
+    concat(upper(left(name,1)),lower(substring(name,2))) as name
+from Users 
+order by user_id
+
