@@ -30,5 +30,5 @@ A.Sql: completed 7 questions <br>
 B.Python : completed 6 questions <br>
 
 Sqoop : <br>
-A. Completed theory 
+A. Completed theory <br>
 B. Practised commands: sqoop list-databases,sqoop list-tables,sqoop eval,sqoop import, sqoop export <br>
