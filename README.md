@@ -1,5 +1,6 @@
+#
+IT ESSENTIALS COMPLETED<br>
 #IT ESSENTIALS <br>
-
 A.Linux Commands<br>
 B.ETL Tools<br>
 C.Version Control<br>
@@ -11,7 +12,7 @@ H. OOPS<br>
 I. Cloud will be completed by monday  i.e 02/13 <br>
 J. And also remaining topics (CI|CD, Sharepoint,Confluence,API) <br>
 K. Only 2 topics left in it essentials I.e CI/CD and Cloud( GCP and Azure)<br>
-L. Today: 02/13  Jenikins , GCP And Azure<br>
+L. Jenikins , GCP And Azure<br>
 
 
 Hadoop : <br>
