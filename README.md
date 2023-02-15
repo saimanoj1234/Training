@@ -31,8 +31,8 @@ B.Python : completed 6 questions <br>
 
 Sqoop : <br>
 A. Completed theory <br>
-B. Practised commands: sqoop list-databases,sqoop list-tables,sqoop eval,sqoop import, sqoop export <br>
+B. Practised commands: sqoop list-databases,sqoop list-tables,sqoop eval,sqoop import <br>
 
 On 2/14/2023 : <br>
 A.Watched SQL in youtube and practised some questions <br>
-B.Worked on sqoop assignment given by aravind.
+B.Worked on sqoop assignment given by aravind on Delta import.
