@@ -36,3 +36,6 @@ B. Practised commands: sqoop list-databases,sqoop list-tables,sqoop eval,sqoop i
 On 2/14/2023 : <br>
 A.Watched SQL in youtube and practised some questions <br>
 B.Worked on sqoop assignment given by aravind on Delta import.
+
+I was off on 02/16, on 02/15 parctised sql, sqoop.<br>
+Today i.e. 02/17 will be working on sql,python and will revise hadoop,hive and sqoop.<br>
