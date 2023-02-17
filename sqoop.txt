@@ -1,0 +1,1 @@
+Sqoop is a tool which is used to import data from RDBMS to HDFS and export viceversa.
