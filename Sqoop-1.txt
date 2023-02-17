@@ -1,0 +1,137 @@
+
+sqoop list-databases  \
+--connect jdbc:mysql://192.1.67.3306/practice \
+--username teju \
+--password teju!1
+
+
+ sqoop list-tables \
+ --connect jdbc:mysql://ms.itversity.com/retail_db \
+  --username retail_user \
+  --password itversity  
+
+sqoop eval --connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user  --password itversity   --query "select * from departments"
+
+==================================================================================
+import option
+
+i have table departments in mysql.
+
+i want to move department table from mysql into hdfs [ import ]
+
+these data will be stored in my hdfs  /user/itv001418/departments/data-file
+
+by default mapper is 4 
+
+sqoop import \
+--connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user \
+--password itversity \
+--table  departments
+
+
+sqoop import \
+--connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user \
+--password itversity \
+--table  orders 
+
+Total rows is 68K+
+
+
+
+ since we dont mention dir under hdfs, it creates dir with same name as table name
+  [ departments  ] .under these dir al records are stored
+
+
+To see the directories 
+
+ hdfs dfs -ls /user/itv001418/departments/
+
+we can see 4 files as default mapper is 4
+
+
+ hdfs dfs -rm -r  /user/itv001418/departments
+
+sqoop import \
+--connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user \
+--password itversity \
+--table  departments --m 2
+
+
+here mapper is 2
+
+sqoop import \
+--connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user \
+--password itversity \
+--table  departments --m 2
+
+import orders table 
+
+
+sqoop import \
+--connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+--username retail_user \
+--password itversity \
+--table  orders  
+
+
+
+ 
+
+sqoop import --connect jdbc:mysql://ms.itversity.com:3306/retail_db \
+ --username retail_user  --password itversity \
+ --table departments  --m 1 \
+ --target-dir /user/itv001418/batch14
+
+
+
+-------------------------------------------------------------------------------
+
+1. mysql -u retail_user -p  -h ms.itversity.com
+  password : itversity
+
+2. use retail_db ;
+
+Task 1 .
+
+ import some table from retail_db into hdfs
+
+ a) usding default
+
+ b) specified location
+
+ Task 2 :
+
+    Export
+
+   a) create table t1 structure in mysql under retail_export
+
+   b) create data file and move to hdfs location
+
+      hdfs dfs -mkdir /user/itv001418/florida
+
+     hdfs dfs -put datafile /user/itv001418/florida
+
+
+ c) export command to export these data into mysql table t1
+
+========================================================================================================
+
+
+
+ sqoop job \
+--meta-connect jdbc:hsqldb:hsql://localhost:cxln2.c.thelab-240901.internal/sqoopex \
+--list
+
+/home/bigda
+tacloudxlab41716/.sqoop/shared-metastore.db
+
+
+
+
+
+ 
