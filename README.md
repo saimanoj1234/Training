@@ -39,3 +39,7 @@ B.Worked on sqoop assignment given by aravind on Delta import.
 
 I was off on 02/16, on 02/15 parctised sql, sqoop.<br>
 Today i.e. 02/17 will be working on sql,python and will revise hadoop,hive and sqoop.<br>
+
+Spark : <br>
+A. Spark architecture, lazy evaluation, data frames. Need to watch youtube videos on architecture. <br>
+
