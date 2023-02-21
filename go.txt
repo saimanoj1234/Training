@@ -1,0 +1,76 @@
+******************** VARIABLES ************************************
+In Go Variable can be declared as:
+
+1. var i int=10
+2. i:=10
+3.var i int
+  i=10
+
+*** If we need to declare group of variables then we need declare them as:***
+var(
+ name string ="sai manoj"
+ age int = 24
+ college string ="nau"
+ term string ="Fall"
+)
+
+------------------------------------------------------------------------------
+EVERY VARIABLE IN GO SHOULD BE USED OTHERWISE WE GET COMPILATION ERROR
+------------------------------------------------------------------------------ 
+
+SHADOWING:
+   If we declare variable at package level and also the same variable with different value in main function the variable will return the value which is in main function.
+Example:
+
+package main
+import (
+"fmt"
+)
+
+var i int = 42
+
+func main(){
+       var i int=42
+       fmt.Println("the value ",i)
+}
+
+
+************************************CONSTANTS*************************************
+They are immutable and but can be shadowed 
+Named like variables
+A. PascalCase for exported constants
+B. camalCase for imported constants
+const myConst int = 12
+Types:
+1.Typed 
+Ex: const myCost int =12
+2.Untyped
+Ex: const myCost = 12
+3.ENumerated Constants
+const a = iota
+
+## Code for In NUmerated Constants
+package main
+import ( "fmt"
+)
+const (
+       a = iota
+       b = iota
+       c = iota
+)
+func main(){
+           fmt.Printf("%V\n",a)
+           fmt.Printf("%V\n",b)
+           fmt.Printf("%V\n",c)
+}
+
+RESULT: 0 1 2
+
+We cant changed the constant value in the porogram
+
+Constant can be of any primitive type i.e. int,string,float32,bool....
+
+
+******************************ARRAY AND SLICES********************************
+x := [3]int{12,2,3,}
+index and then give the values.
