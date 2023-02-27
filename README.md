@@ -43,3 +43,5 @@ Today i.e. 02/17 will be working on sql,python and will revise hadoop,hive and s
 Spark : <br>
 A. Spark architecture, lazy evaluation, data frames. Need to watch youtube videos on architecture. <br>
 
+Updated resume and needs to prepare intro<br>
+
